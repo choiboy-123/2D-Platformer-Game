@@ -1,0 +1,178 @@
+\doxysection{Enemy Class Reference}
+\hypertarget{class_enemy}{}\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+an \doxylink{class_enemy}{Enemy} object\textquotesingle{}s methods and instances. It also inherits from \doxylink{class_animate}{Animate} and \doxylink{class_object}{Object}  
+
+
+
+
+{\ttfamily \#include $<$Enemy.\+h$>$}
+
+Inheritance diagram for Enemy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_enemy}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_enemy_a35ed1595dddc4ec3d28b114aa5198a37}{Enemy}} (sf\+::\+Vector2f enemy\+Start, sf\+::\+Vector2f enemy\+End, sf\+::\+Vector2f level\+Size, sf\+::\+Vector2f size)
+\begin{DoxyCompactList}\small\item\em the constructor for an \doxylink{class_enemy}{Enemy} object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_enemy_a14e6b73d1e7350cd573052fa4d20a0e7}{Animate}} (sf\+::\+Vector2f level\+Size, sf\+::\+Vector2f size)
+\begin{DoxyCompactList}\small\item\em constructor for an \doxylink{class_animate}{Animate} object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_animate}{Animate}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_animate_a14e6b73d1e7350cd573052fa4d20a0e7}{Animate}} (sf\+::\+Vector2f level\+Size, sf\+::\+Vector2f size)
+\begin{DoxyCompactList}\small\item\em constructor for an \doxylink{class_animate}{Animate} object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animate_aa4cbeaafacd85d0070ec795e8e1aa894}{Update}} (int time\+Elapsed)
+\begin{DoxyCompactList}\small\item\em updates the position of the object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animate_af15877399ce782d2bad5ab512bf1b126}{collided}} (\mbox{\hyperlink{class_object}{Object}} \texorpdfstring{$\ast$}{*}terrain)
+\begin{DoxyCompactList}\small\item\em lets the object stand on floors, hit walls/ceilings, and jump from the top of a block \end{DoxyCompactList}\item 
+virtual sf\+::\+Vector2$<$ float $>$ \mbox{\hyperlink{class_animate_a91ca5823d289c40e7ff388f612758b16}{get\+Prev\+Position}} ()
+\begin{DoxyCompactList}\small\item\em get method for the object\textquotesingle{}s prev\+Position \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object_a09c9a6893270c794777e47e14913f01d}{Object}} (sf\+::\+Vector2f size)
+\begin{DoxyCompactList}\small\item\em The constructor for the \doxylink{class_object}{Object} class. \end{DoxyCompactList}\item 
+sf\+::\+Shape \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_object_a8aea57b6e6d873ddcfebc7452bec07c7}{get\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em gets the shape of the object class \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_object_acbdc3c4af57da23e7fe64c2c87ae924e}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em gets the size of the object class \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_object_a9a1c5aced34de08186ae4e429e9cc77e}{get\+PositionX}} ()
+\begin{DoxyCompactList}\small\item\em gets the x position of the object as an int \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_object_aba09fe9dcb64d88ceb556618f7323abe}{get\+PositionY}} ()
+\begin{DoxyCompactList}\small\item\em gets the y position of the object as an int \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_object_a06e1c940f87f69189d0f54d81d10224a}{collides}} (\mbox{\hyperlink{class_object}{Object}} \texorpdfstring{$\ast$}{*}other\+Object)
+\begin{DoxyCompactList}\small\item\em checks for collision between two objects \end{DoxyCompactList}\item 
+void {\bfseries collect} ()
+\item 
+void {\bfseries show} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_a423ea0d7a98b87844ce0d334545afb1f}{move}} (int time\+Elapsed) override
+\begin{DoxyCompactList}\small\item\em controls enemy movement; it moves back and forth between 2 positions \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_enemy_ab8ef71d2a30be9dbd4a5c0ff325b77cc}\label{class_enemy_ab8ef71d2a30be9dbd4a5c0ff325b77cc} 
+sf\+::\+Vector2f {\bfseries enemy\+Start\+Position}
+\item 
+\Hypertarget{class_enemy_a7771a4c3797586154821f7414bf43a32}\label{class_enemy_a7771a4c3797586154821f7414bf43a32} 
+sf\+::\+Vector2f {\bfseries enemy\+End\+Position}
+\item 
+\Hypertarget{class_enemy_a21d97250b5e8befe6d02aeeb0bb36de3}\label{class_enemy_a21d97250b5e8befe6d02aeeb0bb36de3} 
+bool {\bfseries left} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_animate}{Animate}}}
+\begin{DoxyCompactItemize}
+\item 
+const float {\bfseries speed} = 0.\+002
+\item 
+const unsigned int {\bfseries lower\+XBound} = 0
+\item 
+unsigned int {\bfseries upper\+XBound}
+\item 
+unsigned int {\bfseries lower\+YBound}
+\item 
+const float {\bfseries gravity} = -\/0.\+0000002
+\item 
+const float {\bfseries initial\+Jump\+Velocity} = 0.\+008
+\item 
+const float {\bfseries mid\+Jump\+Acceleration} = 0.\+0000001
+\item 
+const float {\bfseries terminal\+Velocity} = -\/0.\+1
+\item 
+const float {\bfseries sim\+Speed} = 0.\+25
+\item 
+float {\bfseries vy} = 0
+\item 
+float {\bfseries ay} = 0
+\item 
+bool {\bfseries jumped} = false
+\item 
+sf\+::\+Vector2$<$ float $>$ {\bfseries prev\+Position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Rectangle\+Shape \texorpdfstring{$\ast$}{*} {\bfseries shape}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+an \doxylink{class_enemy}{Enemy} object\textquotesingle{}s methods and instances. It also inherits from \doxylink{class_animate}{Animate} and \doxylink{class_object}{Object} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_enemy_a35ed1595dddc4ec3d28b114aa5198a37}\label{class_enemy_a35ed1595dddc4ec3d28b114aa5198a37} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{enemy\+Start,  }\item[{sf\+::\+Vector2f}]{enemy\+End,  }\item[{sf\+::\+Vector2f}]{level\+Size,  }\item[{sf\+::\+Vector2f}]{size }\end{DoxyParamCaption})}
+
+
+
+the constructor for an \doxylink{class_enemy}{Enemy} object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy\+Start} & starting position of an enemy\textquotesingle{}s walk cycle \\
+\hline
+{\em enemy\+End} & ending position of an enemy\textquotesingle{}s walk cycle \\
+\hline
+{\em level\+Size} & 2d size of the level \\
+\hline
+{\em size} & size of the enemy \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_enemy_a14e6b73d1e7350cd573052fa4d20a0e7}\label{class_enemy_a14e6b73d1e7350cd573052fa4d20a0e7} 
+\index{Enemy@{Enemy}!Animate@{Animate}}
+\index{Animate@{Animate}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Animate()}{Animate()}}
+{\footnotesize\ttfamily Animate\+::\+Animate (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{level\+Size,  }\item[{sf\+::\+Vector2f}]{size }\end{DoxyParamCaption})}
+
+
+
+constructor for an \doxylink{class_animate}{Animate} object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level\+Size} & 2D size of the level \\
+\hline
+{\em size} & 2D size of the object \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_enemy_a423ea0d7a98b87844ce0d334545afb1f}\label{class_enemy_a423ea0d7a98b87844ce0d334545afb1f} 
+\index{Enemy@{Enemy}!move@{move}}
+\index{move@{move}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Enemy\+::move (\begin{DoxyParamCaption}\item[{int}]{time\+Elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+controls enemy movement; it moves back and forth between 2 positions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Elapsed} & time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_animate_a37cccc5468fbaca95756f9108d74a31d}{Animate}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_enemy_8h}{Enemy.\+h}}\item 
+\mbox{\hyperlink{_enemy_8cpp}{Enemy.\+cpp}}\end{DoxyCompactItemize}

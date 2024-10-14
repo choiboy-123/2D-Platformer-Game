@@ -1,0 +1,132 @@
+\doxysection{Object Class Reference}
+\hypertarget{class_object}{}\label{class_object}\index{Object@{Object}}
+Inheritance diagram for Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object_a09c9a6893270c794777e47e14913f01d}{Object}} (sf\+::\+Vector2f size)
+\begin{DoxyCompactList}\small\item\em The constructor for the \doxylink{class_object}{Object} class. \end{DoxyCompactList}\item 
+sf\+::\+Shape \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_object_a8aea57b6e6d873ddcfebc7452bec07c7}{get\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em gets the shape of the object class \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_object_acbdc3c4af57da23e7fe64c2c87ae924e}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em gets the size of the object class \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_object_a9a1c5aced34de08186ae4e429e9cc77e}{get\+PositionX}} ()
+\begin{DoxyCompactList}\small\item\em gets the x position of the object as an int \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_object_aba09fe9dcb64d88ceb556618f7323abe}{get\+PositionY}} ()
+\begin{DoxyCompactList}\small\item\em gets the y position of the object as an int \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_object_a06e1c940f87f69189d0f54d81d10224a}{collides}} (\mbox{\hyperlink{class_object}{Object}} \texorpdfstring{$\ast$}{*}other\+Object)
+\begin{DoxyCompactList}\small\item\em checks for collision between two objects \end{DoxyCompactList}\item 
+\Hypertarget{class_object_afb2c79d4cc70d82ea499ac1ef2260eca}\label{class_object_afb2c79d4cc70d82ea499ac1ef2260eca} 
+void {\bfseries collect} ()
+\item 
+\Hypertarget{class_object_ab6d0594ca9021e45807970c88710b759}\label{class_object_ab6d0594ca9021e45807970c88710b759} 
+void {\bfseries show} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_object_a61aaa0f1b0fd6bada9f2ecbea16b3a0c}\label{class_object_a61aaa0f1b0fd6bada9f2ecbea16b3a0c} 
+sf\+::\+Rectangle\+Shape \texorpdfstring{$\ast$}{*} {\bfseries shape}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_object_a09c9a6893270c794777e47e14913f01d}\label{class_object_a09c9a6893270c794777e47e14913f01d} 
+\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{Object()}{Object()}}
+{\footnotesize\ttfamily Object\+::\+Object (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{size }\end{DoxyParamCaption})}
+
+
+
+The constructor for the \doxylink{class_object}{Object} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the \doxylink{class_object}{Object} to create \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_object_a06e1c940f87f69189d0f54d81d10224a}\label{class_object_a06e1c940f87f69189d0f54d81d10224a} 
+\index{Object@{Object}!collides@{collides}}
+\index{collides@{collides}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{collides()}{collides()}}
+{\footnotesize\ttfamily bool Object\+::collides (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object}{Object}} \texorpdfstring{$\ast$}{*}}]{other\+Object }\end{DoxyParamCaption})}
+
+
+
+checks for collision between two objects 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Object} & the object to check if this object is colliding with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the two objects are colliding, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_object_a9a1c5aced34de08186ae4e429e9cc77e}\label{class_object_a9a1c5aced34de08186ae4e429e9cc77e} 
+\index{Object@{Object}!getPositionX@{getPositionX}}
+\index{getPositionX@{getPositionX}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{getPositionX()}{getPositionX()}}
+{\footnotesize\ttfamily int Object\+::get\+PositionX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the x position of the object as an int 
+
+\begin{DoxyReturn}{Returns}
+the x position of the object 
+\end{DoxyReturn}
+\Hypertarget{class_object_aba09fe9dcb64d88ceb556618f7323abe}\label{class_object_aba09fe9dcb64d88ceb556618f7323abe} 
+\index{Object@{Object}!getPositionY@{getPositionY}}
+\index{getPositionY@{getPositionY}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{getPositionY()}{getPositionY()}}
+{\footnotesize\ttfamily int Object\+::get\+PositionY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the y position of the object as an int 
+
+\begin{DoxyReturn}{Returns}
+the y position of the object 
+\end{DoxyReturn}
+\Hypertarget{class_object_a8aea57b6e6d873ddcfebc7452bec07c7}\label{class_object_a8aea57b6e6d873ddcfebc7452bec07c7} 
+\index{Object@{Object}!getShape@{getShape}}
+\index{getShape@{getShape}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{getShape()}{getShape()}}
+{\footnotesize\ttfamily sf\+::\+Shape \texorpdfstring{$\ast$}{*} Object\+::get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the shape of the object class 
+
+\begin{DoxyReturn}{Returns}
+the shape of the object class 
+\end{DoxyReturn}
+\Hypertarget{class_object_acbdc3c4af57da23e7fe64c2c87ae924e}\label{class_object_acbdc3c4af57da23e7fe64c2c87ae924e} 
+\index{Object@{Object}!getSize@{getSize}}
+\index{getSize@{getSize}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Object\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the size of the object class 
+
+\begin{DoxyReturn}{Returns}
+the size of the object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_object_8h}{Object.\+h}}\item 
+\mbox{\hyperlink{_object_8cpp}{Object.\+cpp}}\end{DoxyCompactItemize}

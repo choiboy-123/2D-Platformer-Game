@@ -1,0 +1,30 @@
+\doxysection{User.\+h}
+\hypertarget{_user_8h_source}{}\label{_user_8h_source}\mbox{\hyperlink{_user_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ PLATFORMER\_USER\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ PLATFORMER\_USER\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_level_8h}{Level.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_menu_8h}{Menu.h}}"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_user}{User}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_user}{User}}(\textcolor{keywordtype}{string}\ userName,\ shared\_ptr<sf::RenderWindow>\ window);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_a8186525b14965e59a6317a5b8b11b450}{saveState}}(\textcolor{keywordtype}{int}\ levelCompleted);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_a9faa7384172e4550c8a620bddd747706}{updateMeta}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_user_ab07980c4181adfd95d935fb6ccbafd10}{getNumAccessibleLevels}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{string}\ user;}
+\DoxyCodeLine{00027\ \ \ \ \ vector<string>\ levels;}
+\DoxyCodeLine{00028\ \ \ \ \ shared\_ptr<sf::RenderWindow>\ mainWindow;}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PLATFORMER\_USER\_H}}
+
+\end{DoxyCode}

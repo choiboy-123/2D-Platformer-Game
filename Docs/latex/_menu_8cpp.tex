@@ -1,0 +1,144 @@
+\doxysection{Menu.\+cpp File Reference}
+\hypertarget{_menu_8cpp}{}\label{_menu_8cpp}\index{Menu.cpp@{Menu.cpp}}
+
+
+Handles any menus (level select, pause, etc.)  
+
+
+{\ttfamily \#include "{}Menu.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_menu_8cpp_a27976556ff11c6be347dcfe1f277a452}{Main\+Menu}} (shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window)
+\begin{DoxyCompactList}\small\item\em This is the main menu function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_menu_8cpp_a1c11e32717feedec286323d01d610d81}{Game\+Over}} (shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window)
+\begin{DoxyCompactList}\small\item\em This is the game over menu (when player dies). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_menu_8cpp_ad981fa058cb9eb339765658260096dc1}{Level\+Complete}} (shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window)
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_level}{Level} Complete level. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_menu_8cpp_a161bd6743d6c560ac9b3b30c8aed9275}{Pause\+Menu}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window)
+\begin{DoxyCompactList}\small\item\em Pause menu to be used. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_menu_8cpp_a9b0d1cd55762431417d9e2c7d51d0aec}{Level\+Select\+Pause}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window)
+\begin{DoxyCompactList}\small\item\em This is the pause menu while in level select. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_menu_8cpp_a8a62c60c11e8d31c73da6d191864adbd}{Level\+Select\+Menu}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window)
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_level}{Level} Select Menu that will call and play a level for the user based on their selection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles any menus (level select, pause, etc.) 
+
+\begin{DoxyAuthor}{Author}
+Jake 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000014}{Bug}}]no known bugs \end{DoxyRefDesc}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_menu_8cpp_a1c11e32717feedec286323d01d610d81}\label{_menu_8cpp_a1c11e32717feedec286323d01d610d81} 
+\index{Menu.cpp@{Menu.cpp}!GameOver@{GameOver}}
+\index{GameOver@{GameOver}!Menu.cpp@{Menu.cpp}}
+\doxysubsubsection{\texorpdfstring{GameOver()}{GameOver()}}
+{\footnotesize\ttfamily int Game\+Over (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$}]{window }\end{DoxyParamCaption})}
+
+
+
+This is the game over menu (when player dies). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & window to draw game over menu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer returned based on user selection 
+\end{DoxyReturn}
+\Hypertarget{_menu_8cpp_ad981fa058cb9eb339765658260096dc1}\label{_menu_8cpp_ad981fa058cb9eb339765658260096dc1} 
+\index{Menu.cpp@{Menu.cpp}!LevelComplete@{LevelComplete}}
+\index{LevelComplete@{LevelComplete}!Menu.cpp@{Menu.cpp}}
+\doxysubsubsection{\texorpdfstring{LevelComplete()}{LevelComplete()}}
+{\footnotesize\ttfamily int Level\+Complete (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$}]{window }\end{DoxyParamCaption})}
+
+
+
+The \doxylink{class_level}{Level} Complete level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & window to draw the level complete menu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return integer based on user selection 
+\end{DoxyReturn}
+\Hypertarget{_menu_8cpp_a8a62c60c11e8d31c73da6d191864adbd}\label{_menu_8cpp_a8a62c60c11e8d31c73da6d191864adbd} 
+\index{Menu.cpp@{Menu.cpp}!LevelSelectMenu@{LevelSelectMenu}}
+\index{LevelSelectMenu@{LevelSelectMenu}!Menu.cpp@{Menu.cpp}}
+\doxysubsubsection{\texorpdfstring{LevelSelectMenu()}{LevelSelectMenu()}}
+{\footnotesize\ttfamily int Level\+Select\+Menu (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$}]{window }\end{DoxyParamCaption})}
+
+
+
+The \doxylink{class_level}{Level} Select Menu that will call and play a level for the user based on their selection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & window to draw the level select menu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns an integer based on user\textquotesingle{}s action 
+\end{DoxyReturn}
+\Hypertarget{_menu_8cpp_a9b0d1cd55762431417d9e2c7d51d0aec}\label{_menu_8cpp_a9b0d1cd55762431417d9e2c7d51d0aec} 
+\index{Menu.cpp@{Menu.cpp}!LevelSelectPause@{LevelSelectPause}}
+\index{LevelSelectPause@{LevelSelectPause}!Menu.cpp@{Menu.cpp}}
+\doxysubsubsection{\texorpdfstring{LevelSelectPause()}{LevelSelectPause()}}
+{\footnotesize\ttfamily int Level\+Select\+Pause (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$}]{window }\end{DoxyParamCaption})}
+
+
+
+This is the pause menu while in level select. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & window to draw the pause menu for the level select. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return integer based on user selection 
+\end{DoxyReturn}
+\Hypertarget{_menu_8cpp_a27976556ff11c6be347dcfe1f277a452}\label{_menu_8cpp_a27976556ff11c6be347dcfe1f277a452} 
+\index{Menu.cpp@{Menu.cpp}!MainMenu@{MainMenu}}
+\index{MainMenu@{MainMenu}!Menu.cpp@{Menu.cpp}}
+\doxysubsubsection{\texorpdfstring{MainMenu()}{MainMenu()}}
+{\footnotesize\ttfamily int Main\+Menu (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$}]{window }\end{DoxyParamCaption})}
+
+
+
+This is the main menu function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & the window to draw the main menu to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns an integer based on the user selection 
+\end{DoxyReturn}
+\Hypertarget{_menu_8cpp_a161bd6743d6c560ac9b3b30c8aed9275}\label{_menu_8cpp_a161bd6743d6c560ac9b3b30c8aed9275} 
+\index{Menu.cpp@{Menu.cpp}!PauseMenu@{PauseMenu}}
+\index{PauseMenu@{PauseMenu}!Menu.cpp@{Menu.cpp}}
+\doxysubsubsection{\texorpdfstring{PauseMenu()}{PauseMenu()}}
+{\footnotesize\ttfamily int Pause\+Menu (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$}]{window }\end{DoxyParamCaption})}
+
+
+
+Pause menu to be used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & the window to draw the pause menu onto \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return integer based on pause menu selection from user 
+\end{DoxyReturn}

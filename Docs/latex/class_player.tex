@@ -1,0 +1,173 @@
+\doxysection{Player Class Reference}
+\hypertarget{class_player}{}\label{class_player}\index{Player@{Player}}
+
+
+an \doxylink{class_player}{Player} object\textquotesingle{}s methods and instances. It also inherits from \doxylink{class_animate}{Animate} and \doxylink{class_object}{Object}  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_a273a8b181676890349d9afde6dc8c376}{Player}} (sf\+::\+Vector2f start, sf\+::\+Vector2f level\+Size, sf\+::\+Vector2f size)
+\begin{DoxyCompactList}\small\item\em the constructor for a \doxylink{class_player}{Player} object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_a14e6b73d1e7350cd573052fa4d20a0e7}{Animate}} (sf\+::\+Vector2f level\+Size, sf\+::\+Vector2f size)
+\begin{DoxyCompactList}\small\item\em constructor for an \doxylink{class_animate}{Animate} object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_animate}{Animate}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_animate_a14e6b73d1e7350cd573052fa4d20a0e7}{Animate}} (sf\+::\+Vector2f level\+Size, sf\+::\+Vector2f size)
+\begin{DoxyCompactList}\small\item\em constructor for an \doxylink{class_animate}{Animate} object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animate_aa4cbeaafacd85d0070ec795e8e1aa894}{Update}} (int time\+Elapsed)
+\begin{DoxyCompactList}\small\item\em updates the position of the object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animate_af15877399ce782d2bad5ab512bf1b126}{collided}} (\mbox{\hyperlink{class_object}{Object}} \texorpdfstring{$\ast$}{*}terrain)
+\begin{DoxyCompactList}\small\item\em lets the object stand on floors, hit walls/ceilings, and jump from the top of a block \end{DoxyCompactList}\item 
+virtual sf\+::\+Vector2$<$ float $>$ \mbox{\hyperlink{class_animate_a91ca5823d289c40e7ff388f612758b16}{get\+Prev\+Position}} ()
+\begin{DoxyCompactList}\small\item\em get method for the object\textquotesingle{}s prev\+Position \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object_a09c9a6893270c794777e47e14913f01d}{Object}} (sf\+::\+Vector2f size)
+\begin{DoxyCompactList}\small\item\em The constructor for the \doxylink{class_object}{Object} class. \end{DoxyCompactList}\item 
+sf\+::\+Shape \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_object_a8aea57b6e6d873ddcfebc7452bec07c7}{get\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em gets the shape of the object class \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_object_acbdc3c4af57da23e7fe64c2c87ae924e}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em gets the size of the object class \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_object_a9a1c5aced34de08186ae4e429e9cc77e}{get\+PositionX}} ()
+\begin{DoxyCompactList}\small\item\em gets the x position of the object as an int \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_object_aba09fe9dcb64d88ceb556618f7323abe}{get\+PositionY}} ()
+\begin{DoxyCompactList}\small\item\em gets the y position of the object as an int \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_object_a06e1c940f87f69189d0f54d81d10224a}{collides}} (\mbox{\hyperlink{class_object}{Object}} \texorpdfstring{$\ast$}{*}other\+Object)
+\begin{DoxyCompactList}\small\item\em checks for collision between two objects \end{DoxyCompactList}\item 
+void {\bfseries collect} ()
+\item 
+void {\bfseries show} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_a5accf126d2f729725b601a0cd49c8fe7}{move}} (int time\+Elapsed) override
+\begin{DoxyCompactList}\small\item\em control player left/right and jump movement with WASD keys \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_player_a5db2a41d7ecf16fc313a0c816ac22b4e}\label{class_player_a5db2a41d7ecf16fc313a0c816ac22b4e} 
+sf\+::\+Texture {\bfseries texture\+Right}
+\item 
+\Hypertarget{class_player_afe099f7fb4d995d3cfe5ba34f5e5d91a}\label{class_player_afe099f7fb4d995d3cfe5ba34f5e5d91a} 
+sf\+::\+Texture {\bfseries texture\+Left}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_animate}{Animate}}}
+\begin{DoxyCompactItemize}
+\item 
+const float {\bfseries speed} = 0.\+002
+\item 
+const unsigned int {\bfseries lower\+XBound} = 0
+\item 
+unsigned int {\bfseries upper\+XBound}
+\item 
+unsigned int {\bfseries lower\+YBound}
+\item 
+const float {\bfseries gravity} = -\/0.\+0000002
+\item 
+const float {\bfseries initial\+Jump\+Velocity} = 0.\+008
+\item 
+const float {\bfseries mid\+Jump\+Acceleration} = 0.\+0000001
+\item 
+const float {\bfseries terminal\+Velocity} = -\/0.\+1
+\item 
+const float {\bfseries sim\+Speed} = 0.\+25
+\item 
+float {\bfseries vy} = 0
+\item 
+float {\bfseries ay} = 0
+\item 
+bool {\bfseries jumped} = false
+\item 
+sf\+::\+Vector2$<$ float $>$ {\bfseries prev\+Position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Rectangle\+Shape \texorpdfstring{$\ast$}{*} {\bfseries shape}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+an \doxylink{class_player}{Player} object\textquotesingle{}s methods and instances. It also inherits from \doxylink{class_animate}{Animate} and \doxylink{class_object}{Object} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_player_a273a8b181676890349d9afde6dc8c376}\label{class_player_a273a8b181676890349d9afde6dc8c376} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{start,  }\item[{sf\+::\+Vector2f}]{level\+Size,  }\item[{sf\+::\+Vector2f}]{size }\end{DoxyParamCaption})}
+
+
+
+the constructor for a \doxylink{class_player}{Player} object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & starting position for a player on a level \\
+\hline
+{\em level\+Size} & 2d size of the level \\
+\hline
+{\em size} & size of the player \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_a14e6b73d1e7350cd573052fa4d20a0e7}\label{class_player_a14e6b73d1e7350cd573052fa4d20a0e7} 
+\index{Player@{Player}!Animate@{Animate}}
+\index{Animate@{Animate}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Animate()}{Animate()}}
+{\footnotesize\ttfamily Animate\+::\+Animate (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{level\+Size,  }\item[{sf\+::\+Vector2f}]{size }\end{DoxyParamCaption})}
+
+
+
+constructor for an \doxylink{class_animate}{Animate} object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level\+Size} & 2D size of the level \\
+\hline
+{\em size} & 2D size of the object \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a5accf126d2f729725b601a0cd49c8fe7}\label{class_player_a5accf126d2f729725b601a0cd49c8fe7} 
+\index{Player@{Player}!move@{move}}
+\index{move@{move}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Player\+::move (\begin{DoxyParamCaption}\item[{int}]{time\+Elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+control player left/right and jump movement with WASD keys 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Elapsed} & time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_animate_a37cccc5468fbaca95756f9108d74a31d}{Animate}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
+\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

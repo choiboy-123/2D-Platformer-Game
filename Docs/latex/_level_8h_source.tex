@@ -1,0 +1,59 @@
+\doxysection{Level.\+h}
+\hypertarget{_level_8h_source}{}\label{_level_8h_source}\mbox{\hyperlink{_level_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ PLATFORMER\_LEVEL\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ PLATFORMER\_LEVEL\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ GRIDSIZE\ 64}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//\#define\ DEFAULT\_WINDOW\_WIDTH\ 800}}
+\DoxyCodeLine{00012\ \textcolor{comment}{//\#define\ DEFAULT\_WINDOW\_HEIGHT\ 600}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ BACKGROUND\_HEIGHT\ (-\/1080+159)}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ BACKGROUND\_WIDTH\ 1920}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_player_8h}{Player.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_obstacle_8h}{Obstacle.h}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}Terrain.h"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_goal_8h}{Goal.h}}"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_menu_8h}{Menu.h}}"{}}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_coin_8h}{Coin.h}}"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}Score.h"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_enemy_8h}{Enemy.h}}"{}}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_level}{Level}}\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_level}{Level}}(std::shared\_ptr<sf::RenderWindow>\ window,\ std::string\ levelName);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_level_a3ca172de80b4f2c00bc30f01048f2238}{play}}(std::shared\_ptr<sf::RenderWindow>\ window);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_level_a2b5754d26049841c3f047ceaee04812f}{load}}(std::string\ levelName);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_level_a063afc0ec0a3d3e153c8ef8031f180df}{getLevel}}();}
+\DoxyCodeLine{00033\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//Initialize\ needed\ variables}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ coinsCollect\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00036\ \ \ \ \ sf::Clock\ gameClock;}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}*\ player;}
+\DoxyCodeLine{00038\ \ \ \ \ std::vector<Object*>\ deathObjects;}
+\DoxyCodeLine{00039\ \ \ \ \ std::vector<Object*>\ rewardObjects;}
+\DoxyCodeLine{00040\ \ \ \ \ std::vector<Object*>\ scoreObjects;}
+\DoxyCodeLine{00041\ \ \ \ \ std::vector<Object*>\ terrain;}
+\DoxyCodeLine{00042\ \ \ \ \ std::vector<Goal*>\ goals;}
+\DoxyCodeLine{00043\ \ \ \ \ sf::RectangleShape\ floor;}
+\DoxyCodeLine{00044\ \ \ \ \ sf::Texture\ backgroundTexture;}
+\DoxyCodeLine{00045\ \ \ \ \ std::vector<sf::Sprite*>\ backgrounds;}
+\DoxyCodeLine{00046\ \ \ \ \ sf::Vector2f\ start;}
+\DoxyCodeLine{00047\ \ \ \ \ sf::Vector2f\ size;}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//Goal*\ goal;}}
+\DoxyCodeLine{00049\ \ \ \ \ sf::View*\ camera;}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_enemy}{Enemy}}*\ enemy;}
+\DoxyCodeLine{00051\ \ \ \ \ std::vector<Enemy*>\ enemies;}
+\DoxyCodeLine{00052\ \ \ \ \ std::vector<sf::Vector2f*>\ enemyStartPositions;\ \ \textcolor{comment}{//\ setting\ points\ where\ enemy\ walks}}
+\DoxyCodeLine{00053\ \ \ \ \ std::vector<sf::Vector2f*>\ enemyEndPositions;}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ levelNum;}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PLATFORMER\_LEVEL\_H}}
+
+\end{DoxyCode}

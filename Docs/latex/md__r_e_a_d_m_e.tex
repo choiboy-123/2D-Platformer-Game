@@ -1,0 +1,77 @@
+\chapter{Group 14 -\/ Platformer Game}
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{Group 14 -\/ Platformer Game@{Group 14 -\/ Platformer Game}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+ \hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Getting Started}{Getting Started}}\label{md__r_e_a_d_m_e_autotoc_md1}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{\texorpdfstring{Dependencies and Set-\/\+Up}{Dependencies and Set-Up}}\label{md__r_e_a_d_m_e_autotoc_md2}
+This program requires downloading SFML 2.\+6.\+0 or later. Please click \href{https://www.sfml-dev.org/download/sfml/2.6.1/}{\texttt{ here}} and download your compatible version.
+
+Currently our program has been tested on Windows and Intel-\/based Macs.
+
+To run on an application CLion, copy and paste the following in your CMake\+Lists.\+txt to build and run the program properly.\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsubsection{\texorpdfstring{For Windows\+:}{For Windows:}}\label{md__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cmake\_minimum\_required(VERSION\ 3.23)}
+\DoxyCodeLine{project(Platformer)}
+\DoxyCodeLine{}
+\DoxyCodeLine{set(CMAKE\_CXX\_STANDARD\ 14)}
+\DoxyCodeLine{include\_directories(../libraries)}
+\DoxyCodeLine{}
+\DoxyCodeLine{set(SFML\_STATIC\_LIBRARIES\ TRUE)}
+\DoxyCodeLine{set(SFML\_DIR\ "{}libraries/SFML-\/2.6.0/lib/cmake/SFML"{})}
+\DoxyCodeLine{}
+\DoxyCodeLine{find\_package(SFML\ 2.6\ COMPONENTS\ graphics\ audio\ system\ window\ REQUIRED)}
+\DoxyCodeLine{add\_executable(Platformer\ main.cpp\ Player.cpp\ Player.h\ Level.cpp\ Level.h\ Obstacle.cpp\ Obstacle.h\ Object.cpp\ Object.h\ Menu.cpp\ Menu.h\ Goal.cpp\ Goal.h\ Terrain.cpp\ Terrain.h\ Animate.cpp\ Animate.h\ Enemy.cpp\ Enemy.h\ Coin.cpp\ Coin.h\ Score.cpp\ Score.h\ User.cpp\ User.h)}
+\DoxyCodeLine{target\_link\_libraries(Platformer\ sfml-\/graphics\ sfml-\/audio\ sfml-\/system\ sfml-\/window\ -\/static)}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsubsection{\texorpdfstring{For Mac\+:}{For Mac:}}\label{md__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cmake\_minimum\_required(VERSION\ 3.23)}
+\DoxyCodeLine{project(group14)}
+\DoxyCodeLine{}
+\DoxyCodeLine{set(CMAKE\_CXX\_STANDARD\ 17)}
+\DoxyCodeLine{}
+\DoxyCodeLine{include\_directories(/usr/local/include)}
+\DoxyCodeLine{include\_directories(\$\{SFML\_INCLUDE\_DIRS\})}
+\DoxyCodeLine{}
+\DoxyCodeLine{find\_package(SFML\ 2.6\ COMPONENTS\ graphics\ audio\ system\ window\ REQUIRED)}
+\DoxyCodeLine{add\_executable(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ group14}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ main.cpp}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Player.h\ Player.cpp}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Level.h\ Level.cpp}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Menu.h\ Menu.cpp}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Obstacle.h\ Obstacle.cpp}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Object.h\ Object.cpp}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Goal.h\ Goal.cpp}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Terrain.h\ Terrain.cpp}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Animate.h\ Animate.cpp}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Enemy.h\ Enemy.cpp}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Score.h\ Score.cpp}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Coin.h\ Coin.cpp}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ User.h\ User.cpp}
+\DoxyCodeLine{)}
+\DoxyCodeLine{target\_link\_libraries(group14\ sfml-\/graphics\ sfml-\/audio\ sfml-\/system\ sfml-\/window)}
+
+\end{DoxyCode}
+
+
+To build this program properly in CLion, please ensure that the "{}\+Resources"{} directory is moved/copied into you "{}cmake-\/build-\/debug"{} directory to ensure that all textures are loaded in properly.\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{\texorpdfstring{Executing Program}{Executing Program}}\label{md__r_e_a_d_m_e_autotoc_md5}
+To run the program, open the specific build folder and ensure it\textquotesingle{}s in the main directory. Open the executable and the game should run.
+
+For mac we recommend the following\+:
+\begin{DoxyItemize}
+\item After opening the mac build folder and moving it into the main directory, go to the terminal.
+\item In the terminal, change directory to the directory with the executable.
+\item Run the executable with the following command\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./group14}
+
+\end{DoxyCode}
+
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysection{\texorpdfstring{How to Play}{How to Play}}\label{md__r_e_a_d_m_e_autotoc_md6}
+Use \textquotesingle{}A\textquotesingle{} and \textquotesingle{}D\textquotesingle{} keys to move right and left. Use Space or \textquotesingle{}W\textquotesingle{} key to jump.
+
+Avoid the fire and spiders, collect the coins, and move to the portal to complete the level. 

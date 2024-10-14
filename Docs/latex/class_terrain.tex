@@ -1,0 +1,97 @@
+\doxysection{Terrain Class Reference}
+\hypertarget{class_terrain}{}\label{class_terrain}\index{Terrain@{Terrain}}
+
+
+Objects the player can collide with without being harmed.  
+
+
+
+
+{\ttfamily \#include $<$Terrain.\+h$>$}
+
+Inheritance diagram for Terrain\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_terrain}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_terrain_ab7d4f7242f1fdd2496da207f16d684e2}{Terrain}} (sf\+::\+Vector2f size, sf\+::\+Vector2f pos)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_terrain}{Terrain} constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object_a09c9a6893270c794777e47e14913f01d}{Object}} (sf\+::\+Vector2f size)
+\begin{DoxyCompactList}\small\item\em The constructor for the \doxylink{class_object}{Object} class. \end{DoxyCompactList}\item 
+sf\+::\+Shape \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_object_a8aea57b6e6d873ddcfebc7452bec07c7}{get\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em gets the shape of the object class \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_object_acbdc3c4af57da23e7fe64c2c87ae924e}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em gets the size of the object class \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_object_a9a1c5aced34de08186ae4e429e9cc77e}{get\+PositionX}} ()
+\begin{DoxyCompactList}\small\item\em gets the x position of the object as an int \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_object_aba09fe9dcb64d88ceb556618f7323abe}{get\+PositionY}} ()
+\begin{DoxyCompactList}\small\item\em gets the y position of the object as an int \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_object_a06e1c940f87f69189d0f54d81d10224a}{collides}} (\mbox{\hyperlink{class_object}{Object}} \texorpdfstring{$\ast$}{*}other\+Object)
+\begin{DoxyCompactList}\small\item\em checks for collision between two objects \end{DoxyCompactList}\item 
+void {\bfseries collect} ()
+\item 
+void {\bfseries show} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_terrain_aeeaac8ea25ccb776b53a2717af048198}\label{class_terrain_aeeaac8ea25ccb776b53a2717af048198} 
+sf\+::\+Vector2f {\bfseries position}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Rectangle\+Shape \texorpdfstring{$\ast$}{*} {\bfseries shape}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Objects the player can collide with without being harmed. 
+
+\begin{DoxyAuthor}{Author}
+Liam
+\end{DoxyAuthor}
+\doxylink{class_terrain}{Terrain} constructor 
+\begin{DoxyParams}{Parameters}
+{\em size} & the size of the terrain object to be created \\
+\hline
+{\em pos} & the position for the terrain to be created at \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_terrain_ab7d4f7242f1fdd2496da207f16d684e2}\label{class_terrain_ab7d4f7242f1fdd2496da207f16d684e2} 
+\index{Terrain@{Terrain}!Terrain@{Terrain}}
+\index{Terrain@{Terrain}!Terrain@{Terrain}}
+\doxysubsubsection{\texorpdfstring{Terrain()}{Terrain()}}
+{\footnotesize\ttfamily Terrain\+::\+Terrain (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{size,  }\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_terrain}{Terrain} constructor. 
+
+\begin{DoxyAuthor}{Author}
+Liam 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em size} & the size of the terrain object to be created \\
+\hline
+{\em pos} & the position for the terrain to be created at \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Terrain.\+h\item 
+Terrain.\+cpp\end{DoxyCompactItemize}

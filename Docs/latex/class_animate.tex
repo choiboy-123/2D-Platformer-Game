@@ -1,0 +1,190 @@
+\doxysection{Animate Class Reference}
+\hypertarget{class_animate}{}\label{class_animate}\index{Animate@{Animate}}
+
+
+an \doxylink{class_animate}{Animate} object\textquotesingle{}s methods and instances. It also inherits from \doxylink{class_object}{Object}  
+
+
+
+
+{\ttfamily \#include $<$Animate.\+h$>$}
+
+Inheritance diagram for Animate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_animate}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_animate_a14e6b73d1e7350cd573052fa4d20a0e7}{Animate}} (sf\+::\+Vector2f level\+Size, sf\+::\+Vector2f size)
+\begin{DoxyCompactList}\small\item\em constructor for an \doxylink{class_animate}{Animate} object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animate_aa4cbeaafacd85d0070ec795e8e1aa894}{Update}} (int time\+Elapsed)
+\begin{DoxyCompactList}\small\item\em updates the position of the object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animate_af15877399ce782d2bad5ab512bf1b126}{collided}} (\mbox{\hyperlink{class_object}{Object}} \texorpdfstring{$\ast$}{*}terrain)
+\begin{DoxyCompactList}\small\item\em lets the object stand on floors, hit walls/ceilings, and jump from the top of a block \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_animate_a37cccc5468fbaca95756f9108d74a31d}{move}} (int time\+Elapsed)
+\begin{DoxyCompactList}\small\item\em controls object movement; is left empty to indicate all \doxylink{class_animate}{Animate} objects need this method \end{DoxyCompactList}\item 
+virtual sf\+::\+Vector2$<$ float $>$ \mbox{\hyperlink{class_animate_a91ca5823d289c40e7ff388f612758b16}{get\+Prev\+Position}} ()
+\begin{DoxyCompactList}\small\item\em get method for the object\textquotesingle{}s prev\+Position \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object_a09c9a6893270c794777e47e14913f01d}{Object}} (sf\+::\+Vector2f size)
+\begin{DoxyCompactList}\small\item\em The constructor for the \doxylink{class_object}{Object} class. \end{DoxyCompactList}\item 
+sf\+::\+Shape \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_object_a8aea57b6e6d873ddcfebc7452bec07c7}{get\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em gets the shape of the object class \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_object_acbdc3c4af57da23e7fe64c2c87ae924e}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em gets the size of the object class \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_object_a9a1c5aced34de08186ae4e429e9cc77e}{get\+PositionX}} ()
+\begin{DoxyCompactList}\small\item\em gets the x position of the object as an int \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_object_aba09fe9dcb64d88ceb556618f7323abe}{get\+PositionY}} ()
+\begin{DoxyCompactList}\small\item\em gets the y position of the object as an int \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_object_a06e1c940f87f69189d0f54d81d10224a}{collides}} (\mbox{\hyperlink{class_object}{Object}} \texorpdfstring{$\ast$}{*}other\+Object)
+\begin{DoxyCompactList}\small\item\em checks for collision between two objects \end{DoxyCompactList}\item 
+void {\bfseries collect} ()
+\item 
+void {\bfseries show} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_animate_adcbc26da7309060dc8a786937bc06d66}\label{class_animate_adcbc26da7309060dc8a786937bc06d66} 
+const float {\bfseries speed} = 0.\+002
+\item 
+\Hypertarget{class_animate_a73d08ef44a71f2cc3d27ce46a07af413}\label{class_animate_a73d08ef44a71f2cc3d27ce46a07af413} 
+const unsigned int {\bfseries lower\+XBound} = 0
+\item 
+\Hypertarget{class_animate_ac962a2b479365d89d160293620f70985}\label{class_animate_ac962a2b479365d89d160293620f70985} 
+unsigned int {\bfseries upper\+XBound}
+\item 
+\Hypertarget{class_animate_a08397367849e97b9e8c9c06433b8738c}\label{class_animate_a08397367849e97b9e8c9c06433b8738c} 
+unsigned int {\bfseries lower\+YBound}
+\item 
+\Hypertarget{class_animate_a4304100272a0bcba117523c596f0769c}\label{class_animate_a4304100272a0bcba117523c596f0769c} 
+const float {\bfseries gravity} = -\/0.\+0000002
+\item 
+\Hypertarget{class_animate_aea95968f9c182e0e9d2e3e5364178eb8}\label{class_animate_aea95968f9c182e0e9d2e3e5364178eb8} 
+const float {\bfseries initial\+Jump\+Velocity} = 0.\+008
+\item 
+\Hypertarget{class_animate_a15df42054bae265d9d7ca27e95bb4fab}\label{class_animate_a15df42054bae265d9d7ca27e95bb4fab} 
+const float {\bfseries mid\+Jump\+Acceleration} = 0.\+0000001
+\item 
+\Hypertarget{class_animate_ae3058d5f608b9dd2620783b49928ce6c}\label{class_animate_ae3058d5f608b9dd2620783b49928ce6c} 
+const float {\bfseries terminal\+Velocity} = -\/0.\+1
+\item 
+\Hypertarget{class_animate_a70784054845ef72b91057f0fe1303708}\label{class_animate_a70784054845ef72b91057f0fe1303708} 
+const float {\bfseries sim\+Speed} = 0.\+25
+\item 
+\Hypertarget{class_animate_a288c876f3ff3665641ac39840eefd8b3}\label{class_animate_a288c876f3ff3665641ac39840eefd8b3} 
+float {\bfseries vy} = 0
+\item 
+\Hypertarget{class_animate_aee181a86bb3fccfcf5bc704b00b5650c}\label{class_animate_aee181a86bb3fccfcf5bc704b00b5650c} 
+float {\bfseries ay} = 0
+\item 
+\Hypertarget{class_animate_a564c675cb004c5c72cca588fba48fd00}\label{class_animate_a564c675cb004c5c72cca588fba48fd00} 
+bool {\bfseries jumped} = false
+\item 
+\Hypertarget{class_animate_a8607df85b70205c3b8c465759e48d408}\label{class_animate_a8607df85b70205c3b8c465759e48d408} 
+sf\+::\+Vector2$<$ float $>$ {\bfseries prev\+Position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_object}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Rectangle\+Shape \texorpdfstring{$\ast$}{*} {\bfseries shape}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+an \doxylink{class_animate}{Animate} object\textquotesingle{}s methods and instances. It also inherits from \doxylink{class_object}{Object} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_animate_a14e6b73d1e7350cd573052fa4d20a0e7}\label{class_animate_a14e6b73d1e7350cd573052fa4d20a0e7} 
+\index{Animate@{Animate}!Animate@{Animate}}
+\index{Animate@{Animate}!Animate@{Animate}}
+\doxysubsubsection{\texorpdfstring{Animate()}{Animate()}}
+{\footnotesize\ttfamily Animate\+::\+Animate (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{level\+Size,  }\item[{sf\+::\+Vector2f}]{size }\end{DoxyParamCaption})}
+
+
+
+constructor for an \doxylink{class_animate}{Animate} object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level\+Size} & 2D size of the level \\
+\hline
+{\em size} & 2D size of the object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_animate_af15877399ce782d2bad5ab512bf1b126}\label{class_animate_af15877399ce782d2bad5ab512bf1b126} 
+\index{Animate@{Animate}!collided@{collided}}
+\index{collided@{collided}!Animate@{Animate}}
+\doxysubsubsection{\texorpdfstring{collided()}{collided()}}
+{\footnotesize\ttfamily void Animate\+::collided (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object}{Object}} \texorpdfstring{$\ast$}{*}}]{terrain }\end{DoxyParamCaption})}
+
+
+
+lets the object stand on floors, hit walls/ceilings, and jump from the top of a block 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terrain} & the \doxylink{class_terrain}{Terrain} object being collided against \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_animate_a91ca5823d289c40e7ff388f612758b16}\label{class_animate_a91ca5823d289c40e7ff388f612758b16} 
+\index{Animate@{Animate}!getPrevPosition@{getPrevPosition}}
+\index{getPrevPosition@{getPrevPosition}!Animate@{Animate}}
+\doxysubsubsection{\texorpdfstring{getPrevPosition()}{getPrevPosition()}}
+{\footnotesize\ttfamily sf\+::\+Vector2$<$ float $>$ Animate\+::get\+Prev\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get method for the object\textquotesingle{}s prev\+Position 
+
+\begin{DoxyReturn}{Returns}
+returns the object\textquotesingle{}s previous position 
+\end{DoxyReturn}
+\Hypertarget{class_animate_a37cccc5468fbaca95756f9108d74a31d}\label{class_animate_a37cccc5468fbaca95756f9108d74a31d} 
+\index{Animate@{Animate}!move@{move}}
+\index{move@{move}!Animate@{Animate}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Animate\+::move (\begin{DoxyParamCaption}\item[{int}]{time\+Elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+controls object movement; is left empty to indicate all \doxylink{class_animate}{Animate} objects need this method 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Elapsed} & time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_enemy_a423ea0d7a98b87844ce0d334545afb1f}{Enemy}}, and \mbox{\hyperlink{class_player_a5accf126d2f729725b601a0cd49c8fe7}{Player}}.
+
+\Hypertarget{class_animate_aa4cbeaafacd85d0070ec795e8e1aa894}\label{class_animate_aa4cbeaafacd85d0070ec795e8e1aa894} 
+\index{Animate@{Animate}!Update@{Update}}
+\index{Update@{Update}!Animate@{Animate}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Animate\+::\+Update (\begin{DoxyParamCaption}\item[{int}]{time\+Elapsed }\end{DoxyParamCaption})}
+
+
+
+updates the position of the object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Elapsed} & time that has passed in the level \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Animate.\+h\item 
+\mbox{\hyperlink{_animate_8cpp}{Animate.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+\doxysection{Enemy.\+h}
+\hypertarget{_enemy_8h_source}{}\label{_enemy_8h_source}\mbox{\hyperlink{_enemy_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ PLATFORMER\_ENEMY\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ PLATFORMER\_ENEMY\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Animate.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_enemy}{Enemy}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_animate}{Animate}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_animate_a14e6b73d1e7350cd573052fa4d20a0e7}{Animate::Animate}};}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_enemy}{Enemy}}(sf::Vector2f\ enemyStart,\ sf::Vector2f\ enemyEnd,\ sf::Vector2f\ levelSize,\ sf::Vector2f\ size);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_a423ea0d7a98b87844ce0d334545afb1f}{move}}(\textcolor{keywordtype}{int}\ timeElapsed)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00024\ \ \ \ \ sf::Vector2f\ enemyStartPosition;\ \ \ \textcolor{comment}{//\ setting\ points\ where\ enemy\ walks}}
+\DoxyCodeLine{00025\ \ \ \ \ sf::Vector2f\ enemyEndPosition;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ left\ =\ \textcolor{keyword}{false};\ \ \ \ \ \ \textcolor{comment}{//\ detect\ if\ enemy's\ going\ left\ or\ not}}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PLATFORMER\_ENEMY\_H}}
+
+\end{DoxyCode}

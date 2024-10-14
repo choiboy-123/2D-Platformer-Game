@@ -1,0 +1,38 @@
+\doxysection{Animate.\+h}
+\hypertarget{_animate_8h_source}{}\label{_animate_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ PLATFORMER\_ANIMATE\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ PLATFORMER\_ANIMATE\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_object_8h}{Object.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_animate}{Animate}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_object}{Object}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_animate}{Animate}}(sf::Vector2f\ levelSize,\ sf::Vector2f\ size);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_animate_aa4cbeaafacd85d0070ec795e8e1aa894}{Update}}(\textcolor{keywordtype}{int}\ timeElapsed);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_animate_af15877399ce782d2bad5ab512bf1b126}{collided}}(\mbox{\hyperlink{class_object}{Object}}*\ terrain);\ \textcolor{comment}{//assumed\ to\ be\ terrain\ for\ now}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_animate_a37cccc5468fbaca95756f9108d74a31d}{move}}(\textcolor{keywordtype}{int}\ timeElapsed);\ \textcolor{comment}{//\ made\ virtual\ and\ public\ so\ children\ can\ access\ this}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ sf::Vector2<float>\ \mbox{\hyperlink{class_animate_a91ca5823d289c40e7ff388f612758b16}{getPrevPosition}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ speed\ =\ 0.002;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ lowerXBound\ =\ 0;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ upperXBound;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ lowerYBound;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ gravity\ =\ -\/0.0000002;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ initialJumpVelocity\ =\ 0.008;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ midJumpAcceleration\ =\ 0.0000001;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ terminalVelocity\ =\ -\/0.1;}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ simSpeed\ =\ 0.25;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{float}\ vy\ =\ 0;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{float}\ ay\ =\ 0;}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ jumped\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00038\ \ \ \ \ sf::Vector2<float>\ prevPosition;}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PLATFORMER\_ANIMATE\_H}}
+
+\end{DoxyCode}

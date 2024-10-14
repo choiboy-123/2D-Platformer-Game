@@ -1,0 +1,38 @@
+\doxysection{Player.\+h}
+\hypertarget{_player_8h_source}{}\label{_player_8h_source}\mbox{\hyperlink{_player_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ PLATFORMER\_PLAYER\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ PLATFORMER\_PLAYER\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Animate.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_player}{Player}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_animate}{Animate}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_animate_a14e6b73d1e7350cd573052fa4d20a0e7}{Animate::Animate}};}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}(sf::Vector2f\ start,\ sf::Vector2f\ levelSize,\ sf::Vector2f\ size);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \textcolor{comment}{//\ \ \ \ const\ float\ speed\ =\ 0.002;}}
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ \ \ \ const\ unsigned\ int\ lowerXBound\ =\ 0;\ //temporary}}
+\DoxyCodeLine{00025\ \textcolor{comment}{//\ \ \ \ unsigned\ int\ lowerYBound;\ //temporary}}
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ \ \ \ const\ float\ gravity\ =\ -\/0.0000002;}}
+\DoxyCodeLine{00027\ \textcolor{comment}{//\ \ \ \ const\ float\ initialJumpVelocity\ =\ 0.008;}}
+\DoxyCodeLine{00028\ \textcolor{comment}{//\ \ \ \ const\ float\ midJumpAcceleration\ =\ 0.0000001;}}
+\DoxyCodeLine{00029\ \textcolor{comment}{//\ \ \ \ const\ float\ terminalVelocity\ =\ -\/0.1;}}
+\DoxyCodeLine{00030\ \textcolor{comment}{//\ \ \ \ const\ float\ simSpeed\ =\ 0.25;}}
+\DoxyCodeLine{00031\ \textcolor{comment}{//\ \ \ \ float\ vy\ =\ 0;}}
+\DoxyCodeLine{00032\ \textcolor{comment}{//\ \ \ \ float\ ay\ =\ 0;}}
+\DoxyCodeLine{00033\ \textcolor{comment}{//\ \ \ \ bool\ jumped\ =\ false;}}
+\DoxyCodeLine{00034\ \textcolor{comment}{//\ \ \ \ sf::Vector2<float>\ prevPosition;}}
+\DoxyCodeLine{00035\ \ \ \ \ sf::Texture\ textureRight;}
+\DoxyCodeLine{00036\ \ \ \ \ sf::Texture\ textureLeft;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a5accf126d2f729725b601a0cd49c8fe7}{move}}(\textcolor{keywordtype}{int}\ timeElapsed)\ \textcolor{keyword}{override};\ \ \ \textcolor{comment}{//\ made\ private\ as\ it's\ inherited\ from\ Animate}}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PLATFORMER\_PLAYER\_H}}
+
+\end{DoxyCode}

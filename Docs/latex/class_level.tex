@@ -1,0 +1,151 @@
+\doxysection{Level Class Reference}
+\hypertarget{class_level}{}\label{class_level}\index{Level@{Level}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_level_ad2a8e0876422f44b3252bc41b80c4565}{Level}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window, std\+::string level\+Name)
+\begin{DoxyCompactList}\small\item\em Create the level object of the specific level. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_level_a3ca172de80b4f2c00bc30f01048f2238}{play}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ window)
+\begin{DoxyCompactList}\small\item\em The main function where the collisions and frame drawing occurs. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_level_a2b5754d26049841c3f047ceaee04812f}{load}} (std\+::string level\+Name)
+\begin{DoxyCompactList}\small\item\em loads levels from png images in resources \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_level_a063afc0ec0a3d3e153c8ef8031f180df}{get\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Returns the level number of the current level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_level_a662dc27db7f099714355323f3dbceec5}\label{class_level_a662dc27db7f099714355323f3dbceec5} 
+bool {\bfseries coins\+Collect} = false
+\item 
+\Hypertarget{class_level_a2675e5e83b839cb470305b6d2a6ca6f6}\label{class_level_a2675e5e83b839cb470305b6d2a6ca6f6} 
+sf\+::\+Clock {\bfseries game\+Clock}
+\item 
+\Hypertarget{class_level_a76b010ccc524cef1ae0c3adc2a63d3b1}\label{class_level_a76b010ccc524cef1ae0c3adc2a63d3b1} 
+\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*} {\bfseries player}
+\item 
+\Hypertarget{class_level_ac2041441a716cbff722c56ee9e3af8b7}\label{class_level_ac2041441a716cbff722c56ee9e3af8b7} 
+std\+::vector$<$ \mbox{\hyperlink{class_object}{Object}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries death\+Objects}
+\item 
+\Hypertarget{class_level_a466224a973c9dfac3d68c9feefcb1f3a}\label{class_level_a466224a973c9dfac3d68c9feefcb1f3a} 
+std\+::vector$<$ \mbox{\hyperlink{class_object}{Object}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries reward\+Objects}
+\item 
+\Hypertarget{class_level_a1f383dec0e1599d4bc01b606b6af51bc}\label{class_level_a1f383dec0e1599d4bc01b606b6af51bc} 
+std\+::vector$<$ \mbox{\hyperlink{class_object}{Object}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries score\+Objects}
+\item 
+\Hypertarget{class_level_a31905568421511a241213169f271371e}\label{class_level_a31905568421511a241213169f271371e} 
+std\+::vector$<$ \mbox{\hyperlink{class_object}{Object}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries terrain}
+\item 
+\Hypertarget{class_level_aac0884799ef652636508137076fbba2e}\label{class_level_aac0884799ef652636508137076fbba2e} 
+std\+::vector$<$ \mbox{\hyperlink{class_goal}{Goal}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries goals}
+\item 
+\Hypertarget{class_level_a3dfecf7fd1bdf1b84beb68f70a946392}\label{class_level_a3dfecf7fd1bdf1b84beb68f70a946392} 
+sf\+::\+Rectangle\+Shape {\bfseries floor}
+\item 
+\Hypertarget{class_level_a00b1f2909d08a615da24ab418e3f066a}\label{class_level_a00b1f2909d08a615da24ab418e3f066a} 
+sf\+::\+Texture {\bfseries background\+Texture}
+\item 
+\Hypertarget{class_level_a61586a67e3878af8066c64c5bdd34d3f}\label{class_level_a61586a67e3878af8066c64c5bdd34d3f} 
+std\+::vector$<$ sf\+::\+Sprite \texorpdfstring{$\ast$}{*} $>$ {\bfseries backgrounds}
+\item 
+\Hypertarget{class_level_a7ef1e6d61cccdfda5fb1202a01463d9b}\label{class_level_a7ef1e6d61cccdfda5fb1202a01463d9b} 
+sf\+::\+Vector2f {\bfseries start}
+\item 
+\Hypertarget{class_level_a4b4941d8a226925f7eb892ec5857818f}\label{class_level_a4b4941d8a226925f7eb892ec5857818f} 
+sf\+::\+Vector2f {\bfseries size}
+\item 
+\Hypertarget{class_level_aac8eb1eaf2acd7aa83465c52efc9bb62}\label{class_level_aac8eb1eaf2acd7aa83465c52efc9bb62} 
+sf\+::\+View \texorpdfstring{$\ast$}{*} {\bfseries camera}
+\item 
+\Hypertarget{class_level_ade3c4ec6f8eff49b4d28ed81a99d2ac9}\label{class_level_ade3c4ec6f8eff49b4d28ed81a99d2ac9} 
+\mbox{\hyperlink{class_enemy}{Enemy}} \texorpdfstring{$\ast$}{*} {\bfseries enemy}
+\item 
+\Hypertarget{class_level_a6548392c47c907c2a58fa8edc9799328}\label{class_level_a6548392c47c907c2a58fa8edc9799328} 
+std\+::vector$<$ \mbox{\hyperlink{class_enemy}{Enemy}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries enemies}
+\item 
+\Hypertarget{class_level_a5ec5d63e21556b781ba7da3fff7f9337}\label{class_level_a5ec5d63e21556b781ba7da3fff7f9337} 
+std\+::vector$<$ sf\+::\+Vector2f \texorpdfstring{$\ast$}{*} $>$ {\bfseries enemy\+Start\+Positions}
+\item 
+\Hypertarget{class_level_a09afc696720138d5f6b235487efd2133}\label{class_level_a09afc696720138d5f6b235487efd2133} 
+std\+::vector$<$ sf\+::\+Vector2f \texorpdfstring{$\ast$}{*} $>$ {\bfseries enemy\+End\+Positions}
+\item 
+\Hypertarget{class_level_ac65c6743307b7f8e87e89f9521bbdc50}\label{class_level_ac65c6743307b7f8e87e89f9521bbdc50} 
+int {\bfseries level\+Num}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_level_ad2a8e0876422f44b3252bc41b80c4565}\label{class_level_ad2a8e0876422f44b3252bc41b80c4565} 
+\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{Level()}{Level()}}
+{\footnotesize\ttfamily Level\+::\+Level (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$}]{window,  }\item[{std\+::string}]{level\+Name }\end{DoxyParamCaption})}
+
+
+
+Create the level object of the specific level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & the window to draw the level and objects to \\
+\hline
+{\em level\+Name} & the name of the level (to load the specific level png) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_level_a063afc0ec0a3d3e153c8ef8031f180df}\label{class_level_a063afc0ec0a3d3e153c8ef8031f180df} 
+\index{Level@{Level}!getLevel@{getLevel}}
+\index{getLevel@{getLevel}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{getLevel()}{getLevel()}}
+{\footnotesize\ttfamily int Level\+::get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the level number of the current level. 
+
+\begin{DoxyReturn}{Returns}
+the level number (ie. number between 1 and 5) 
+\end{DoxyReturn}
+\Hypertarget{class_level_a2b5754d26049841c3f047ceaee04812f}\label{class_level_a2b5754d26049841c3f047ceaee04812f} 
+\index{Level@{Level}!load@{load}}
+\index{load@{load}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily bool Level\+::load (\begin{DoxyParamCaption}\item[{std\+::string}]{level\+Name }\end{DoxyParamCaption})}
+
+
+
+loads levels from png images in resources 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level\+Name} & the name of the level to load \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the level is loaded, false if loading fails 
+\end{DoxyReturn}
+\Hypertarget{class_level_a3ca172de80b4f2c00bc30f01048f2238}\label{class_level_a3ca172de80b4f2c00bc30f01048f2238} 
+\index{Level@{Level}!play@{play}}
+\index{play@{play}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily int Level\+::play (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$}]{window }\end{DoxyParamCaption})}
+
+
+
+The main function where the collisions and frame drawing occurs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & window to draw the objects to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns an integer based on the actions in the game (ie. death, completing the game, or pausing the game) 
+\end{DoxyReturn}
+The following for loops are all checking the player\textquotesingle{}s collission with different objects in the game.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_level_8h}{Level.\+h}}\item 
+\mbox{\hyperlink{_level_8cpp}{Level.\+cpp}}\end{DoxyCompactItemize}

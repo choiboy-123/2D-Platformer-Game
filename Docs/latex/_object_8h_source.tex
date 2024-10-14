@@ -1,0 +1,27 @@
+\doxysection{Object.\+h}
+\hypertarget{_object_8h_source}{}\label{_object_8h_source}\mbox{\hyperlink{_object_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ PLATFORMER\_OBJECT\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ PLATFORMER\_OBJECT\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_object}{Object}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_object}{Object}}(sf::Vector2f\ size);}
+\DoxyCodeLine{00016\ \ \ \ \ sf::Shape*\ \mbox{\hyperlink{class_object_a8aea57b6e6d873ddcfebc7452bec07c7}{getShape}}();}
+\DoxyCodeLine{00017\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{class_object_acbdc3c4af57da23e7fe64c2c87ae924e}{getSize}}();}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_object_a9a1c5aced34de08186ae4e429e9cc77e}{getPositionX}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_object_aba09fe9dcb64d88ceb556618f7323abe}{getPositionY}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_object_a06e1c940f87f69189d0f54d81d10224a}{collides}}(\mbox{\hyperlink{class_object}{Object}}*\ otherObject);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ collect();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ show();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00025\ \ \ \ \ sf::RectangleShape*\ shape;}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PLATFORMER\_OBJECT\_H}}
+
+\end{DoxyCode}
